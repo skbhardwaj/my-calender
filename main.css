@@ -1,0 +1,101 @@
+.cal-body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1;
+    margin: 0 auto;
+    min-width: 320px;
+    padding: 0;
+    width: 100%;
+}
+
+.cal-sec {
+    margin: 20px auto;
+    overflow: hidden;
+    width: 695px;
+    padding: 10px 0;
+}
+
+.cal-time-intervals>li {
+    height: 30px;
+    line-height: 30px;
+}
+
+.cal-time-intervals {
+    float: left;
+    width: 65px;
+    height: 730px;
+    list-style-type: none;
+    margin: -15px 10px 0 0;
+    padding: 0;
+    text-align: right;
+    color: #A7A7A7;
+    font-size: 10pt;
+    position: relative;
+}
+
+.cal-time-intervals>li:nth-child(even) {
+    font-size: 7pt;
+}
+
+.cal-time-intervals>li:nth-child(odd) {
+    color: #686868;
+    font-weight: bold;
+}
+
+.cal-events-container {
+    float: right;
+    position: relative;
+    width: 620px;
+    /* 720 = 12*60, 1px for 1 min  */
+    height: 720px;
+    padding: 0 10px;
+    border-left: 1px solid #D6D6D6;
+    background: #ECECEC;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.cal-event {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    margin-left: 10px;
+    padding: 0px 15px;
+    height: 100%;
+    border: 1px solid #D6D6D6;
+    background: #FFF;
+    overflow: auto;
+}
+
+.cal-event:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 5px;
+    background: #686868;
+}
+
+.cal-event a {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    color: #686868;
+    font-weight: bold;
+    font-size: 8pt;
+}
+
+.cal-event span {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #989898;
+    font-size: 7pt;
+    font-weight: normal;
+    margin-top: 5px;
+}
